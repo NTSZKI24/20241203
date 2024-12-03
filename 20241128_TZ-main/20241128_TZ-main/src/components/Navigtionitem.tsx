@@ -1,11 +1,17 @@
+import Link from "next/link";
+
 export default function NavigationItem({
     link,
-    text
+    text,
+    className
 }:{
     link : string;
     text: string;
+    className: string;
 }){
     return(
-        <a href={link}>{text}</a>
+        <Link className={className} href={link}>
+            {text}
+        </Link>
     )
 }
