@@ -1,0 +1,11 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+nav.navigation{
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+  margin-bottom: 2rem;
+}
