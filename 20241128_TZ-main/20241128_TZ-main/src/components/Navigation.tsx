@@ -24,6 +24,13 @@ export function Navigation() {
                             text="Bejelentkezés"
                         />
                     </li>
+                    <li className="nav-item">
+                        <NavigationItem
+                            className="nav-link"
+                            link="/news"
+                            text="Hírek"
+                        />
+                    </li>
                 </ul>
 
                 <Search />
