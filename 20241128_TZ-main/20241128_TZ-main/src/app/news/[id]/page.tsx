@@ -10,8 +10,33 @@ export default async function Page({
         return article.id == id;
     }) as IArticles;
     return (
-        <div>
-            {JSON.stringify(article)}
+        <div className="row">
+            {article.image && (
+                <div className="col-3">
+                <img 
+                    src={article.image}
+                    style={{
+                        width: "100%"
+                    }}    
+                />
+            </div>
+            )}
+            <div className={`col-${article.image ? 9 : 12}`}>
+                    <h1>{article.title}</h1>
+
+                    <p className="fw-bold">
+                        {article.lead}
+                    </p>
+
+                    <p>
+                        {article.desc}
+                    </p>
+
+                    <small>
+                        {article.date.toLocaleDateString()}
+                    </small>
+
+            </div>
         </div>
     )
 }
