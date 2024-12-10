@@ -11,7 +11,6 @@ export default function ActionButton() {
                     edit()
                 }}
             >🖊</button>
-            <button className="btn btn-danger">🖊</button>
             <button
                 className="btn btn-danger"
                 onClick={() => {
